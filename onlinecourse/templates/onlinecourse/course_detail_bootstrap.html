@@ -54,6 +54,8 @@
             <!-- <HINT> Use Bootstrap Collapse to hide exam first, more details could be found here
             https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp-->
 
+            {% if user.is_authenticated %}
+
             <button class="btn btn-success btn-block" data-toggle="collapse" data-target="#exam">Start Exam</button>
 
             <!--
@@ -98,6 +100,7 @@
 
             <!--Check here to see more details Bootstrap checkbox
              https://www.w3schools.com/bootstrap4/bootstrap_forms_inputs.asp-->
+            {% endif %}
     </div>
 </body>
 </html>
